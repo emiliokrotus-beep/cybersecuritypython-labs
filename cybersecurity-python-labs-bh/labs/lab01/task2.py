@@ -1,54 +1,70 @@
 def main():
-    # 1. ТВОЇ ПОЧАТКОВІ ДАНІ
+    # 1. ПОЧАТКОВІ ДАНІ
+    # Числові рівні для текстових рівнів безпеки
+    levels = {
+        "Public Blockchain": 1,
+        "Permissioned": 2,
+        "Private Network": 3,
+    }
+
     users = {
-        "security_chief": {"role": "security_officer", "clearance": 4, "department": "Security", "active": True},
-        "network_admin": {"role": "network_admin", "clearance": 3, "department": "Network", "active": True},
-        "help_desk": {"role": "support", "clearance": 1, "department": "Support", "active": True},
-        "auditor_ext": {"role": "auditor", "clearance": 3, "department": "Audit", "active": True},
-        "temp_worker": {"role": "temporary", "clearance": 1, "department": "Temp", "active": False}
+        "blockchain_dev":        {"clearance": 3, "active": True},
+        "smart_contract_auditor": {"clearance": 3, "active": True},
+        "crypto_trader":         {"clearance": 2, "active": True},
+        # додайте інших користувачів, яких видно нижче на фото
     }
 
     resources = [
-        ("incident_reports", 4), ("network_topology", 3), ("user_manual", 1),
-        ("vulnerability_scans", 3), ("root_access", 4), ("help_tickets", 1),
-        ("penetration_tests", 4), ("firewall_rules", 3), ("software_licenses", 2),
-        ("faq_docs", 1)
+        ("smart_contracts",   "Private Network"),
+        ("audit_reports",     "Private Network"),
+        ("trading_algorithms", "Permissioned"),
+        ("wallet_interface",  "Public Blockchain"),
+        ("private_keys",      "Private Network"),
+        ("public_blockchain", "Public Blockchain"),
+        ("defi_protocols",    "Private Network"),
+        ("validator_nodes",   "Private Network"),
+        ("market_data",       "Permissioned"),
+        ("community_forum",   "Public Blockchain"),
     ]
 
-    blocked_users = {"temp_worker", "fired_employee", "compromised_acc"}
+    blocked_users = set()
 
-    # Створимо повний список усіх користувачів, яких треба перевірити (включаючи заблокованих, яких немає в системі)
-    all_usernames = set(users.keys()).union(blocked_users)
+    line = "=" * 70
 
-    # 2. ГОЛОВНИЙ ЦИКЛ ПЕРЕВІРКИ
-    # Перебираємо кожного користувача
-    for username in all_usernames:
+    # 2. ВИВЕДЕННЯ СПИСКУ РЕСУРСІВ
+    print(line)
+    print("Список ресурсів та рівні безпеки")
+    print(line)
+    for res_name, level_name in resources:
+        print(f"Ресурс: {res_name.ljust(18)} | Рівень безпеки: {level_name}")
 
-        # Перебираємо кожен ресурс (назва та цифровий рівень безпеки)
-        for res_name, res_level in resources:
+    print()
+    print(line)
+    print("Перевірка прав доступу користувачів")
+    print(line)
+    print()
 
-            # Правило 1: Користувача немає в системі
+    # 3. ПЕРЕВІРКА ДОСТУПУ
+    for username in users:
+        print(f"--- Доступ для: {username} ---")
+
+        for res_name, level_name in resources:
+            res_level = levels[level_name]
+
             if username not in users:
                 result = "DENY (User not found)"
-
-            # Правило 2: Користувач є в списку заблокованих
             elif username in blocked_users:
                 result = "DENY (User is blocked)"
-
-            # Правило 3: Обліковий запис неактивний
-            elif users[username]["active"] == False:
+            elif not users[username]["active"]:
                 result = "DENY (Account inactive)"
-
-            # Правило 4: Рівень допуску достатній (більший або дорівнює рівню ресурсу)
             elif users[username]["clearance"] >= res_level:
                 result = "ALLOW"
-
-            # Правило 5: Рівень допуску замалий
             else:
                 result = "DENY (Insufficient clearance)"
 
-            # 3. ВИВЕДЕННЯ РЕЗУЛЬТАТУ НА ЕКРАН (строго за форматом з картинки)
-            print(f"user=[{username}] resource=[{res_name}] -> {result}")
+            print(f"user={username} resource={res_name} -> {result}")
+
+        print()  # порожній рядок між користувачами
 
 
 if __name__ == "__main__":

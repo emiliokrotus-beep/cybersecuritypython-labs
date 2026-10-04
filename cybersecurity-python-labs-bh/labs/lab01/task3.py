@@ -118,13 +118,13 @@ users_to_register = (
 
 
 def create_user(username, password):
-    #Створює кортеж (username, hash_value)
+    #Створюю кортеж (username, hash_value)
     hash_value = generate_hash(password, PERSONAL_SALT)
     return (username, hash_value)
 
 
 def create_users(users_list):
-    #Створює базу даних у форматі CSV
+    #Створю базу даних у форматі CSV
     dir_path = DATA_DIR
     # Автоматичне створення папки, якщо її немає
     os.makedirs(dir_path, exist_ok=True)
@@ -151,7 +151,7 @@ def read_database():
             if row:
                 users_db.append(row)
 
-    # Виведення красивої таблиці
+
     print("\n" + "=" * 70)
     print(f"{'ЛОГІН':<15} | {'ХЕШ ПАРОЛЯ (SHA-1)':<50}")
     print("=" * 70)
@@ -168,10 +168,10 @@ def login(username: str, password: str, users_db: list) -> bool:
     if not username or not password:
         raise ValueError("Логін або пароль не можуть бути порожніми строками!")
 
-    # Генеруємо хеш введеного пароля з нашою сіллю
+    # Генерую хеш введеного пароля з нашою сіллю
     input_hash = generate_hash(password, PERSONAL_SALT)
 
-    # Шукаємо користувача в базі даних
+    # Шукаю користувача в базі даних
     for db_user, db_hash in users_db:
         if db_user == username:
             return db_hash == input_hash

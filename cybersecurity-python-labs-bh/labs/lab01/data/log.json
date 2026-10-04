@@ -78,5 +78,69 @@
         "timestamp": "2026-09-20 14:06:18",
         "args": [],
         "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-10-04 19:06:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "user1",
+        "result": "failure",
+        "timestamp": "2026-10-04 19:06:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "hacker",
+        "result": "failure",
+        "timestamp": "2026-10-04 19:06:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "alex",
+        "result": "failure",
+        "timestamp": "2026-10-04 19:06:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-10-04 19:06:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "user1",
+        "result": "failure",
+        "timestamp": "2026-10-04 19:06:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "hacker",
+        "result": "failure",
+        "timestamp": "2026-10-04 19:06:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "alex",
+        "result": "failure",
+        "timestamp": "2026-10-04 19:06:46",
+        "args": [],
+        "kwargs": {}
     }
 ]
