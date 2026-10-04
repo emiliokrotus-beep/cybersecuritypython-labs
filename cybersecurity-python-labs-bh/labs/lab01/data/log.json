@@ -1,0 +1,82 @@
+[
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-19 17:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "failure",
+        "timestamp": "2026-09-19 17:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "olena",
+        "result": "failure",
+        "timestamp": "2026-09-19 17:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "ghost",
+        "result": "failure",
+        "timestamp": "2026-09-19 17:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "",
+        "result": "failure",
+        "timestamp": "2026-09-19 17:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "taras",
+        "result": "failure",
+        "timestamp": "2026-09-19 17:16:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 14:06:18",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "user1",
+        "result": "failure",
+        "timestamp": "2026-09-20 14:06:18",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "hacker",
+        "result": "failure",
+        "timestamp": "2026-09-20 14:06:18",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "alex",
+        "result": "failure",
+        "timestamp": "2026-09-20 14:06:18",
+        "args": [],
+        "kwargs": {}
+    }
+]

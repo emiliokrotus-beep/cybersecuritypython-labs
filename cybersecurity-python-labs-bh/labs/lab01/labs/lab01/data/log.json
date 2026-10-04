@@ -1,0 +1,214 @@
+[
+    {
+        "event": "login",
+        "user": "admin",
+        "result": "success",
+        "timestamp": "2026-09-20 12:34:48",
+        "args": [
+            "admin",
+            "adminPass123",
+            [
+                [
+                    "admin",
+                    "b1c358654ab6619a62255d42eefc530fd5858a076f7c2031f7b71f7eba1f3dda"
+                ],
+                [
+                    "user1",
+                    "5d53bf81898ce469df419d5e6ced1fc79ebb8f968da8d00a3fca76e228458c15"
+                ],
+                [
+                    "alex",
+                    "a1cd0bd136c5bdb10de82be41d4a1393c1cf047c4b0d8849cd8937d15e20baaf"
+                ],
+                [
+                    "maria",
+                    "f50e1978ae86032d1c6d18eb9ee2c3d780509f95183fd054e7c71fed8b741b82"
+                ],
+                [
+                    "olga",
+                    "d1eb92722048cfd16a17b0769e0f3149610fd03b0e37685ccb19c190c3e239c9"
+                ],
+                [
+                    "ivan",
+                    "aa1d8ebb97d368a16860842c664a8687b1fddc376b46f51c46ac2b7de5a8e828"
+                ],
+                [
+                    "john",
+                    "19297b45d81fec7702ed8fcc1b35e23ea63d3c2b0e9db4e576f9df3784bf6e12"
+                ],
+                [
+                    "kate",
+                    "76f66640b93001169478fffc295e709e3fba34e388b3cfbc8a26a5676258c010"
+                ],
+                [
+                    "petro",
+                    "8b3b67a5d6ddb5852a49e55ded3a1df2f0e0660019c686ae0b5120f445de48da"
+                ],
+                [
+                    "guest",
+                    "9f01c776120e22c30de6fcd3699e8cff696aeb15deef22e107d8a5e5ed8a47a3"
+                ]
+            ]
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "user1",
+        "result": "failure",
+        "timestamp": "2026-09-20 12:34:48",
+        "args": [
+            "user1",
+            "wrong_pass",
+            [
+                [
+                    "admin",
+                    "b1c358654ab6619a62255d42eefc530fd5858a076f7c2031f7b71f7eba1f3dda"
+                ],
+                [
+                    "user1",
+                    "5d53bf81898ce469df419d5e6ced1fc79ebb8f968da8d00a3fca76e228458c15"
+                ],
+                [
+                    "alex",
+                    "a1cd0bd136c5bdb10de82be41d4a1393c1cf047c4b0d8849cd8937d15e20baaf"
+                ],
+                [
+                    "maria",
+                    "f50e1978ae86032d1c6d18eb9ee2c3d780509f95183fd054e7c71fed8b741b82"
+                ],
+                [
+                    "olga",
+                    "d1eb92722048cfd16a17b0769e0f3149610fd03b0e37685ccb19c190c3e239c9"
+                ],
+                [
+                    "ivan",
+                    "aa1d8ebb97d368a16860842c664a8687b1fddc376b46f51c46ac2b7de5a8e828"
+                ],
+                [
+                    "john",
+                    "19297b45d81fec7702ed8fcc1b35e23ea63d3c2b0e9db4e576f9df3784bf6e12"
+                ],
+                [
+                    "kate",
+                    "76f66640b93001169478fffc295e709e3fba34e388b3cfbc8a26a5676258c010"
+                ],
+                [
+                    "petro",
+                    "8b3b67a5d6ddb5852a49e55ded3a1df2f0e0660019c686ae0b5120f445de48da"
+                ],
+                [
+                    "guest",
+                    "9f01c776120e22c30de6fcd3699e8cff696aeb15deef22e107d8a5e5ed8a47a3"
+                ]
+            ]
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "hacker",
+        "result": "failure",
+        "timestamp": "2026-09-20 12:34:48",
+        "args": [
+            "hacker",
+            "some_password",
+            [
+                [
+                    "admin",
+                    "b1c358654ab6619a62255d42eefc530fd5858a076f7c2031f7b71f7eba1f3dda"
+                ],
+                [
+                    "user1",
+                    "5d53bf81898ce469df419d5e6ced1fc79ebb8f968da8d00a3fca76e228458c15"
+                ],
+                [
+                    "alex",
+                    "a1cd0bd136c5bdb10de82be41d4a1393c1cf047c4b0d8849cd8937d15e20baaf"
+                ],
+                [
+                    "maria",
+                    "f50e1978ae86032d1c6d18eb9ee2c3d780509f95183fd054e7c71fed8b741b82"
+                ],
+                [
+                    "olga",
+                    "d1eb92722048cfd16a17b0769e0f3149610fd03b0e37685ccb19c190c3e239c9"
+                ],
+                [
+                    "ivan",
+                    "aa1d8ebb97d368a16860842c664a8687b1fddc376b46f51c46ac2b7de5a8e828"
+                ],
+                [
+                    "john",
+                    "19297b45d81fec7702ed8fcc1b35e23ea63d3c2b0e9db4e576f9df3784bf6e12"
+                ],
+                [
+                    "kate",
+                    "76f66640b93001169478fffc295e709e3fba34e388b3cfbc8a26a5676258c010"
+                ],
+                [
+                    "petro",
+                    "8b3b67a5d6ddb5852a49e55ded3a1df2f0e0660019c686ae0b5120f445de48da"
+                ],
+                [
+                    "guest",
+                    "9f01c776120e22c30de6fcd3699e8cff696aeb15deef22e107d8a5e5ed8a47a3"
+                ]
+            ]
+        ],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "alex",
+        "result": "failure",
+        "timestamp": "2026-09-20 12:34:48",
+        "args": [
+            "alex",
+            "123",
+            [
+                [
+                    "admin",
+                    "b1c358654ab6619a62255d42eefc530fd5858a076f7c2031f7b71f7eba1f3dda"
+                ],
+                [
+                    "user1",
+                    "5d53bf81898ce469df419d5e6ced1fc79ebb8f968da8d00a3fca76e228458c15"
+                ],
+                [
+                    "alex",
+                    "a1cd0bd136c5bdb10de82be41d4a1393c1cf047c4b0d8849cd8937d15e20baaf"
+                ],
+                [
+                    "maria",
+                    "f50e1978ae86032d1c6d18eb9ee2c3d780509f95183fd054e7c71fed8b741b82"
+                ],
+                [
+                    "olga",
+                    "d1eb92722048cfd16a17b0769e0f3149610fd03b0e37685ccb19c190c3e239c9"
+                ],
+                [
+                    "ivan",
+                    "aa1d8ebb97d368a16860842c664a8687b1fddc376b46f51c46ac2b7de5a8e828"
+                ],
+                [
+                    "john",
+                    "19297b45d81fec7702ed8fcc1b35e23ea63d3c2b0e9db4e576f9df3784bf6e12"
+                ],
+                [
+                    "kate",
+                    "76f66640b93001169478fffc295e709e3fba34e388b3cfbc8a26a5676258c010"
+                ],
+                [
+                    "petro",
+                    "8b3b67a5d6ddb5852a49e55ded3a1df2f0e0660019c686ae0b5120f445de48da"
+                ],
+                [
+                    "guest",
+                    "9f01c776120e22c30de6fcd3699e8cff696aeb15deef22e107d8a5e5ed8a47a3"
+                ]
+            ]
+        ],
+        "kwargs": {}
+    }
+]
